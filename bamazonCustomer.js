@@ -93,7 +93,7 @@ function purchaseItems() {
                 var checkStock = res[0].stock_quantity
                 var purchasedStock = answer.units
 
-                if (checkStock <= purchasedStock) {
+                if (checkStock < purchasedStock) {
                     console.log("Insufficient Quantity!")
                     start();
                 } else {
